@@ -2,7 +2,6 @@ function scrollHorizontally(e) {
   e.preventDefault(); // Prevent default scrolling behavior
 
   var deltaY = e.deltaY * -1;
-  var deltaX = e.deltaX;
 
   function convertRange(number) {
     if (number < -25) {
@@ -15,7 +14,7 @@ function scrollHorizontally(e) {
 
   var scrollSpeed = 60;
 
-  var scrollAmount = (convertRange(deltaY) - convertRange(deltaX)) * scrollSpeed;
+  var scrollAmount = (convertRange(deltaY)) * scrollSpeed;
   console.log(scrollAmount);
 
   window.scrollBy({
