@@ -146,7 +146,7 @@ main {
         opacity: 0.5;
         position: absolute;
         border-radius: 0;
-        height: 100vh;
+        height: 100svh;
         width: 100%;
         z-index: 0;
     }
