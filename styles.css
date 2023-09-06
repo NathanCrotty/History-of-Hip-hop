@@ -137,9 +137,6 @@ main {
 }
 
 @media only screen and (max-width: 900px) {
-    body {
-        position: fixed;
-    }
     .text {
         z-index: 2;
         text-shadow: 0px 0px 10px black;
@@ -154,7 +151,7 @@ main {
         z-index: 0;
     }
     .spotify {
-        top: 100svh;
+        top: calc(100svh - 100px);
         width: 100%;
         border-radius: 0;
     }
