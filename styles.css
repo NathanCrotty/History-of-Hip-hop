@@ -137,10 +137,21 @@ main {
 }
 
 @media only screen and (max-width: 900px) {
+    h2 {
+        font-size: 50px;
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
+    .content {
+        height: calc(100svh - 80px)
+    }
     .text {
+        padding: 0 10vw;
         z-index: 2;
         text-shadow: 0px 0px 10px black;
-        padding: 10%;
+        text-overflow: ellipsis;
     }
     .content > img {
         opacity: 0.5;
@@ -151,7 +162,7 @@ main {
         z-index: 0;
     }
     .spotify {
-        top: calc(100svh - 100px);
+        top: calc(100svh - 80px);
         width: 100%;
         border-radius: 0;
     }
